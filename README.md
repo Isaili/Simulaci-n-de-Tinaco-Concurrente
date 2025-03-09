@@ -115,7 +115,7 @@ Error: No se puede consumir, tinaco vacío.
 ---
 
 ## 📌 Ejecuciones
-<img alt="Night Coding" src="https://drive.google.com/file/d/1RZNZGGaxS0skGB0pRCg8tZIIeUAEaLtJ/view?usp=drive_link" width='100%' align="left" height=300;/><h2 align="left"></h2>
+<img alt="Night Coding" src="https://i.postimg.cc/4d3mNh99/Whats-App-Image-2025-03-09-at-16-48-57-3fb5e26e.jpg" width='100%' align="left" height=300;/><h2 align="left"></h2>
 
 **Autor**
 Isai Lopez
