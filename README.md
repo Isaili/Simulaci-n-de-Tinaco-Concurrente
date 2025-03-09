@@ -7,13 +7,13 @@ Este proyecto simula el manejo concurrente de un tinaco que recibe agua de dos f
 
 El proyecto está organizado en los siguientes archivos:
 
-- 🌫 main.py: Punto de entrada. Inicia el tinaco y los procesos.
-- ⛈ tinaco_context.py: Contiene la clase TinacoContext que gestiona el estado del tinaco.
-- 💧 proceso_pluvial.py: Simula el llenado desde la fuente pluvial.
-- 🎊 proceso_cisterna.py: Simula el llenado desde la cisterna.
-- 🎍 proceso_jardin.py: Simula el consumo de agua para el jardín.
-- 🎎 proceso_lavaderos.py: Simula el consumo de agua para los lavaderos.
-- 🧨 proceso_banios.py: Simula el consumo de agua para los baños.
+- 🌫**main.py**: Punto de entrada. Inicia el tinaco y los procesos.
+- ⛈**tinaco_context.py**: Contiene la clase TinacoContext que gestiona el estado del tinaco.
+- 💧**proceso_pluvial.py**: Simula el llenado desde la fuente pluvial.
+- 🎊**proceso_cisterna.py**: Simula el llenado desde la cisterna.
+- 🎍**proceso_jardin.py**: Simula el consumo de agua para el jardín.
+- 🎎**proceso_lavaderos.py**: Simula el consumo de agua para los lavaderos.
+- 🧨**proceso_banios.py**: Simula el consumo de agua para los baños.
 
 ---
 
