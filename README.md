@@ -48,7 +48,7 @@ El proyecto está organizado en los siguientes archivos:
 
 #### 🔒 Primitivas de Sincronización
 1. **multiprocessing.Lock**:
-   - **Propósito:** Un **Lock** (o cerrojo) es una primitiva de sincronización que permite que solo un proceso a la vez acceda a un recurso compartido.
+  - **Propósito:** Un **Lock** (o cerrojo) es una primitiva de sincronización que permite que solo un proceso a la vez acceda a un recurso compartido.
 
 2. **multiprocessing.Event)**:
   - **Propósito:** Un **Event** es una primitiva de sincronización que permite que un proceso notifique a otros procesos sobre un evento o condición.
