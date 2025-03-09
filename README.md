@@ -59,7 +59,7 @@ El proyecto está organizado en los siguientes archivos:
 ---
 ## 🗂️ Estructura del Proyecto
 
-
+```bash
 tinaco2/
   ├── 📁 tinaco   # Punto de entrada
     ├── 📁 __pycache__   # cache de los archivos
@@ -71,7 +71,7 @@ tinaco2/
     ├── 🗍 proceso_pluvial.py   # Scripts de fuentes y consumos
     ├── 🗍 TinacoContext.py   #Gestion del tinaco
   ├── 🗍 README.md    # Documentación
-
+```
 ---
 
 ## 🚀 Instalación y Ejecución
@@ -93,12 +93,29 @@ python main.py
   ```bash
 Error: No se puede llenar, capacidad excedida.
 ```
-
-
+**Restricciones de Consumo**
+  - 2 **Jardin**:Solo consume agua si el nivel no está por debajo del 50%.
+  - Si el nivel es inferior al 50%, se muestra un mensaje de error:
+  ```bash
+Error: No se puede consumir, nivel de agua bajo para jardín.
+```
+  - 3 **Lavaderos:**: Solo consume agua si el nivel no está por debajo del 3%.
+  - Si el nivel es inferior al 3%, se muestra un mensaje de error:
+  ```bash
+Error: No se puede consumir, nivel de agua bajo para lavaderos.
+```
+  - 4 **Baños**:Siempre consume agua, a menos que el tinaco esté vacío.
+  -Si el tinaco está vacío, se muestra un mensaje de error:
+  ```bash
+Error: No se puede consumir, tinaco vacío.
+```
+**Bomba de Presión**
+- Se activa cuando el nivel de agua supera el 25%.
+- Se desactiva cuando el nivel es menor o igual al 25%
 ---
 
-Autor
+**Autor**
 Isai Lopez
 
-Licencia
+**Licencia**
 Este proyecto está bajo la licencia MIT.
