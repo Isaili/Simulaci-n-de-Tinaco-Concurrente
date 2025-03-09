@@ -30,10 +30,6 @@ Uso en el código:
 
 En cada método que modifica el nivel de agua (llenar_desde_pluvial, llenar_desde_cisterna, consumir_jardin, etc.), utilicé un Lock para garantizar que solo un proceso pueda modificar el nivel de agua a la vez.
 
-Ejemplo:
-with self.lock:
-    if self.nivel_agua.value + cantidad <= self.capacidad_total:
-        self.nivel_agua.value += cantidad
 
 Esto evita que dos procesos intenten modificar el nivel de agua simultáneamente, lo que podría causar inconsistencias.
 
@@ -47,16 +43,6 @@ Utilicé un Event para controlar el estado de la bomba de presión (bomba_activa
 Cuando el nivel de agua supera el 25%, se activa la bomba:
 
 python
-Copy
-if self.nivel_agua.value > 25:
-    self.bomba_activa.set()  # Activar bomba
-Cuando el nivel de agua es menor o igual al 25%, se desactiva la bomba:
-
-python
-Copy
-if self.nivel_agua.value <= 25:
-    self.bomba_activa.clear()  # Desactivar bomba
-Esto garantiza que la bomba solo se active o desactive cuando se cumplan las condiciones específicas.
 
 c) multiprocessing.Manager
 Propósito: Un Manager permite crear objetos compartidos entre procesos, como variables, listas o diccionarios.
@@ -65,14 +51,10 @@ Uso en el código:
 
 Utilicé un Manager para crear una variable compartida (nivel_agua) que almacena el nivel de agua del tinaco.
 
-Ejemplo:
 
-python
-Copy
-self.nivel_agua = Manager().Value('i', 0)  # Variable compartida para el nivel de agua
 Esto permite que todos los procesos accedan y modifiquen el mismo valor de nivel_agua de manera segura.
 
-3. Métodos de Sincronización
+1. Métodos de Sincronización
 Además de las primitivas, utilicé los siguientes métodos para garantizar la sincronización:
 
 a) with self.lock:
@@ -80,12 +62,7 @@ Este bloque garantiza que el código dentro de él se ejecute de manera exclusiv
 
 Ejemplo:
 
-python
-Copy
-with self.lock:
-    if self.nivel_agua.value + cantidad <= self.capacidad_total:
-        self.nivel_agua.value += cantidad
-b) self.bomba_activa.set() y self.bomba_activa.clear()
+
 Estos métodos activan y desactivan el Event que controla la bomba de presión.
 
 Ejemplo:
@@ -94,7 +71,7 @@ python
 Copy
 self.bomba_activa.set()  # Activar bomba
 self.bomba_activa.clear()  # Desactivar bomba
-4. Resumen de Primitivas y Métodos
+1. Resumen de Primitivas y Métodos
 Primitiva/Método	Propósito
 multiprocessing.Lock	Garantiza que solo un proceso modifique el nivel de agua a la vez.
 multiprocessing.Event	Controla el estado de la bomba de presión (activada/desactivada).
@@ -102,7 +79,7 @@ multiprocessing.Manager	Crea variables compartidas entre procesos (como nivel_ag
 with self.lock:	Bloquea el acceso a un recurso compartido mientras se ejecuta un bloque de código.
 self.bomba_activa.set()	Activa la bomba de presión.
 self.bomba_activa.clear()	Desactiva la bomba de presión.
-5. Ejemplo de Sincronización en Acción
+1. Ejemplo de Sincronización en Acción
 Supongamos que dos procesos intentan modificar el nivel de agua al mismo tiempo:
 
 Proceso 1: Intenta llenar el tinaco desde la cisterna.

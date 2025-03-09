@@ -1,10 +1,10 @@
 from multiprocessing import Process
-from TinacoContext import TinacoContext
-from proceso_pluvial import proceso_pluvial
-from proceso_cisterna import proceso_cisterna
-from proceso_jardin import proceso_jardin
-from proceso_lavaderos import proceso_lavaderos
-from proceso_banios import proceso_banios
+from tinaco.TinacoContext import TinacoContext
+from tinaco.proceso_pluvial import proceso_pluvial
+from tinaco.proceso_cisterna import proceso_cisterna
+from tinaco.proceso_jardin import proceso_jardin
+from tinaco.proceso_lavaderos import proceso_lavaderos
+from tinaco.proceso_banios import proceso_banios
 
 if __name__ == "__main__":
     # Crear el tinaco con capacidad total de 100% y límite inferior de 10%
