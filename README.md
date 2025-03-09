@@ -16,11 +16,27 @@ El proyecto está organizado en los siguientes archivos:
 - 🧨**proceso_banios.py**: Simula el consumo de agua para los baños.
 
 ---
+## 🏛️ Arquitectura
+**Procesos**
+- 1 **Tinaco**:(Proceso Central):
+  - Mantiene el estado compartido del tinaco ** (nivel_agua).**
+  - Controla los límites superior e inferior del tinaco.
+  - Expone métodos para llenar y consumir agua.
 
+- 2 **Fuentes de Agua:**
+  - **Pluvial:** Llena el tinaco cuando se simula lluvia.
+  - **Cisterna:**  Llena el tinaco cuando el nivel está por debajo de un mínimo.
 
-
-
+- 3 **Consumos de Agua:**
+  - **Jardín:** Consume agua si el nivel no está por debajo del 50%.
+  - **Lavaderos:** Consume agua si el nivel no está por debajo del 3%.
+  - **Baños:** Siempre consume agua, a menos que el tinaco esté vacío.
+ 
+- 4 **Bomba de Presión:**
+  - Se activa cuando el nivel de agua supera el 25%.
+  - Se desactiva cuando el nivel es menor o igual al 25%.
 ---
+
 Autor
 Isai Lopez
 
