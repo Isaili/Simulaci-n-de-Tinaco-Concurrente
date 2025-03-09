@@ -114,6 +114,9 @@ Error: No se puede consumir, tinaco vacío.
 - Se desactiva cuando el nivel es menor o igual al 25%
 ---
 
+## 📌 Ejecuciones
+<img alt="Night Coding" src="https://drive.google.com/file/d/1RZNZGGaxS0skGB0pRCg8tZIIeUAEaLtJ/view?usp=drive_link" width='100%' align="left" height=300;/><h2 align="left"></h2>
+
 **Autor**
 Isai Lopez
 
