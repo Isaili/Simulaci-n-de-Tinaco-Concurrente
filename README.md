@@ -1,7 +1,7 @@
-# 🏦 Simulación de Tinaco Concurrente
+# 🌌 Simulación de Tinaco Concurrente
 
 ## 🖍 Descripción
-Sistema que simula las operaciones de un banco con tres ventanillas, implementando programación concurrente en Python. Cada cliente es un hilo independiente que puede realizar depósitos o retiros, manteniendo la integridad del saldo bancario mediante mecanismos de sincronización.
+Este proyecto simula el manejo concurrente de un tinaco que recibe agua de dos fuentes (pluvial y cisterna) y suministra agua para tres usos (jardín, lavaderos, baños). Se utiliza el módulo multiprocessing de Python para gestionar los procesos y la sincronización.
 
 ---
 Autor
