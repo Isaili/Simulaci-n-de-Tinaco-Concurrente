@@ -1,9 +1,9 @@
-  <p align="center">
-  <a href="https://github.com/isaili/readme-typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Time+New+Roman&color=cyan&size=25&center=true&vCenter=true&width=600&height=100&lines=+simulacion+de+tinaco+concurrente">
-  </a>
-</p>
+# 🏦 Simulación de Tinaco Concurrente
 
+## 🖍 Descripción
+Sistema que simula las operaciones de un banco con tres ventanillas, implementando programación concurrente en Python. Cada cliente es un hilo independiente que puede realizar depósitos o retiros, manteniendo la integridad del saldo bancario mediante mecanismos de sincronización.
+
+---
 Autor
 Isai Lopez
 
