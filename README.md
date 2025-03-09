@@ -76,12 +76,12 @@ tinaco2/
 
 ## 🚀 Instalación y Ejecución
 
-### 1⃣ Clonar el repositorio
+### 1⃣  Clonar el repositorio
 ```bash
 git clone https://github.com/Isaili/Simulaci-n-de-Tinaco-Concurrente.git
 ```
 
-### 2⃣ Ejecutar la aplicación
+### 2⃣  Ejecutar la aplicación
 ```bash
 python main.py
 ```
